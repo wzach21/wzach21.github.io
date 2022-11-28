@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 150px 700px;
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "e f g"
+    ;
+}
+
+body{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+
+
+nav{
+    grid-area: a;
+    background: red;
+    padding: 8px;
+    background-color: aquamarine;opacity: .5;
+    
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color: black;
+    background-color: white;
+}
+nav li{
+    font-family: 'Merriweather', serif;
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    float: left;
+    justify-content: center;
+    justify-items: center;
+}
+
+title1{
+    font-family: 'Merriweather', serif;
+    color: white;
+    padding: 50px 0;
+    font-size: 2em;
+    text-align: center;
+    grid-area: b;
+    background: black;opacity: .2;
+}
+
+title1 a{
+    color: white;
+    text-decoration: none;
+}
+
+title1 a:hover{
+    color: black;
+    text-decoration: none;
+    background: aquamarine;opacity: .5px;
+}
+
+title2{
+    
+    font-family: 'Merriweather', serif;
+    color: white;
+    padding: 50px 0;
+    font-size: 2em;
+    text-align: center;
+    grid-area: c;
+    background: black;opacity: .2;
+
+}
+
+title2 a{
+    color: white;
+    text-decoration: none;
+}
+
+title2 a:hover{
+    color: black;
+    text-decoration: none;
+    background: aquamarine;opacity: .5px;
+}
+
+title3{
+    font-family: 'Merriweather', serif;
+    color: white;
+    padding: 50px 0;
+    font-size: 2em;
+    text-align: center;
+    grid-area: d;
+    background: black;opacity: .2;
+}
+
+title3 a{
+    color: white;
+    text-decoration: none;
+}
+
+title3 a:hover{
+    color: black;
+    text-decoration: none;
+    background: aquamarine;opacity: .5px;
+}
+
+content1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    text-justify:auto;
+    text-align: center;
+    grid-area: e;
+    border-style: solid;
+    color: aquamarine;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+content2{
+    border-style: solid;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    grid-area: f;
+    color: aquamarine;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+
+}
+
+content3{
+    border-style: solid;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    grid-area: g;
+    color: aquamarine;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+
+}
